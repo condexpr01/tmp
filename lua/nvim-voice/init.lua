@@ -1,9 +1,5 @@
 ---@diagnostic disable: lowercase-global, undefined-global
 
-print(vim.fn.expand('<sfile>:p:h'))
+local M = require("libnvim-audio")
 
-local testlib = require("testlib")
-
-print(testlib.add(1.1,2.2))
-
-return testlib
+return M
