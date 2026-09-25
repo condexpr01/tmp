@@ -86,16 +86,16 @@ extern "C"{
 		return 0;
 	}
 
-	static int ra_get_volumn(lua_State *L){
-		float v = ra.get_volumn();
+	static int ra_get_volume(lua_State *L){
+		float v = ra.get_volume();
 
 		lua_pushnumber(L,v);
 		return 1;
 	}
 
-	static int ra_volumn(lua_State *L){
+	static int ra_volume(lua_State *L){
 		float gain = luaL_checknumber(L,1);
-		ra.volumn(gain);
+		ra.volume(gain);
 		return 0;
 	}
 
@@ -114,8 +114,8 @@ extern "C"{
 		{"ra_pause",ra_pause},
 		{"ra_resume",ra_resume},
 		{"ra_clear",ra_clear},
-		{"ra_get_volumn",ra_get_volumn},
-		{"ra_volumn",ra_volumn},
+		{"ra_get_volume",ra_get_volume},
+		{"ra_volume",ra_volume},
 		{"ra_audio_device_name", ra_audio_device_name},
 		{NULL,NULL}
 	};
