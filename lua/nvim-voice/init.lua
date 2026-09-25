@@ -1,4 +1,6 @@
----@diagnostic disable: lowercase-global
+---@diagnostic disable: lowercase-global, undefined-global
+
+print(vim.fn.expand('<sfile>:p:h'))
 
 local testlib = require("testlib")
 
