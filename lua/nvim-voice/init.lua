@@ -1,5 +1,5 @@
 ---@diagnostic disable: lowercase-global, undefined-global
 
-local M = require("libnvim-audio")
+local M = require("nvim_audio")
 
 return M
